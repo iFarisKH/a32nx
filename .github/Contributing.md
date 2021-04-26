@@ -2,13 +2,39 @@
 
 Welcome to the A32NX project repository. Thank you for your interest in contributing to the project. Full details and guidelines on how to ensure this project is managed well are included below.
 
+## Required software
+
+[git](https://git-scm.com/downloads)
+
+[Docker](https://docs.docker.com/get-docker/) (You do not need an account to use Docker)
+
+## Optional
+
+[vscode](https://code.visualstudio.com/download)
+
+[vscode eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+It's recommended to set gitbash as your default shell in vscode
+
+## Cloning and setup
+
+```shell
+git clone https://github.com/flybywiresim/a32nx.git
+cd a32nx
+.\scripts\dev-env\run.cmd ./scripts/setup.sh
+```
+
+## Building
+
+```shell
+.\scripts\dev-env\run.cmd ./scripts/build.sh
+```
+
+Note that you should use `run.sh` instead of `run.cmd` if you are on Linux (including WSL).
+
 ## Asobo branch
 
 The master branch only contains files which have been modified from the original package. If you wish to work on a file that isn't present in the master branch, simply copy it over from the latest Asobo branch, and add it in its own commit. Please DO NOT add, modify, or delete files from the Asobo branch.
-
-## Committing changes
-
-After making any changes to files inside the `A32NX` directory, ensure you run the `build.py` script to regenerate the `layout.json` as necessary. There's also a CI check to ensure this has been done.
 
 ## Helping others
 
@@ -30,7 +56,7 @@ If changes are made they should always be tested to make sure they work as inten
 
 ## Issue Tracking
 
-If you require **support** with the A32NX, please utilise the channels on our [Discord](https://discord.gg/TtTuKFw). Issues regarding the features or bugs will not be handled on Discord. Please use GitHub issues to track new features or bugs.
+If you require **support** with the A32NX, please utilise the channels on our official [Discord](https://discord.gg/flybywire). Issues regarding the features or bugs will not be handled on Discord. Please use GitHub issues to track new features or bugs.
 
 When submitting an issue, there's a few guidelines we'd ask you to respect to make it easier to manage and for others to understand:
 * **Search the issue tracker** before you submit your issue - it may already be present.
